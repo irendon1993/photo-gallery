@@ -18,7 +18,21 @@ html {
 header {
   border: groove;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  padding: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 section {
@@ -41,7 +55,7 @@ article {
   border: groove;
   height: auto;
   width: auto;
-  padding: 100px;
+  padding: 50px;
 
   margin-bottom: 100px;
   // height: 25%;
@@ -49,4 +63,9 @@ article {
 
 h2 {
   border: groove;
+}
+
+section .players {
+  display: flex;
+  flex-direction: row;
 }
