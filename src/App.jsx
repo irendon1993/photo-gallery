@@ -10,6 +10,7 @@ import { Luka } from './components/Luka'
 import { Kanye } from './components/Kanye'
 import { Cudi } from './components/Cudi'
 import { Rocky } from './components/Rocky'
+import { Travis } from './components/Travis'
 
 class App extends Component {
   render() {
@@ -45,6 +46,9 @@ class App extends Component {
     }
     if (window.location.pathname == '/Rocky') {
       return <Rocky />
+    }
+    if (window.location.pathname === '/Travis') {
+      return <Travis />
     } else {
       return <div>404</div>
     }

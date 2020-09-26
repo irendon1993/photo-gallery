@@ -53,7 +53,9 @@ export class Music extends Component {
             />
           </article>
           <article>
-            <h2>Travis Scott</h2>
+            <h2>
+              <a href="/Travis">Travis Scott</a>
+            </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/travis-scott-nofa-aji-zatmiko.jpg"
               width="400px"
