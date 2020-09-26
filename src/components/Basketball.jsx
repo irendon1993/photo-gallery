@@ -23,7 +23,9 @@ export class Basketball extends Component {
 
         <section className="players">
           <article className="player">
-            <h2>Kobe Bryant</h2>
+            <h2>
+              <a href="/Kobe">KobeBryant</a>
+            </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/kobe-bryant-gilang-bogy.jpg"
               width="400px"
@@ -31,7 +33,9 @@ export class Basketball extends Component {
             />
           </article>
           <article className="player">
-            <h2>LeBron James</h2>
+            <h2>
+              <a href="/Lebron">LeBron James</a>
+            </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/lebron-james-scream-gilang-bogy.jpg"
               width="400px"
@@ -39,7 +43,9 @@ export class Basketball extends Component {
             />
           </article>
           <article className="player">
-            <h2>Michael Jordan</h2>
+            <h2>
+              <a href="/Jordan"> Michael Jordan </a>
+            </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/michael-jordan-gilang-bogy.jpg"
               width="400px"
@@ -47,7 +53,9 @@ export class Basketball extends Component {
             />
           </article>
           <article className="player">
-            <h2>Luka Doncic</h2>
+            <h2>
+              <a href="/Luka"> Luka Doncic</a>
+            </h2>
             <img
               src="https://pbs.twimg.com/media/EUwh1NDXYAMSg0a.jpg"
               width="400px"

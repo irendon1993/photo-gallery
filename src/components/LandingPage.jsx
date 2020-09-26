@@ -15,7 +15,7 @@ export class LandingPage extends Component {
                 <a href="/Basketball">Basketball</a>
               </li>
               <li>
-                <a href="Music">Music</a>
+                <a href="/Music">Music</a>
               </li>
             </ul>
           </header>
@@ -33,7 +33,7 @@ export class LandingPage extends Component {
           </article>
           <article>
             <h2>
-              <a href="/music">Music</a>
+              <a href="/Music">Music</a>
             </h2>
             <img
               src="https://www.realstreetradio.com/wp-content/uploads/2018/11/Kanye.jpg"

@@ -3,6 +3,13 @@ import { Link, Route, Switch } from 'react-router-dom'
 import { Basketball } from './components/Basketball'
 import { LandingPage } from './components/LandingPage'
 import { Music } from './components/Music'
+import { Kobe } from './components/Kobe'
+import { Lebron } from './components/Lebron'
+import { Jordan } from './components/Jordan'
+import { Luka } from './components/Luka'
+import { Kanye } from './components/Kanye'
+import { Cudi } from './components/Cudi'
+import { Rocky } from './components/Rocky'
 
 class App extends Component {
   render() {
@@ -18,8 +25,29 @@ class App extends Component {
     if (window.location.pathname === '/Music') {
       return <Music />
     }
-
-    return <div>404</div>
+    if (window.location.pathname === '/Kobe') {
+      return <Kobe />
+    }
+    if (window.location.pathname === '/Lebron') {
+      return <Lebron />
+    }
+    if (window.location.pathname === '/Jordan') {
+      return <Jordan />
+    }
+    if (window.location.pathname === '/Luka') {
+      return <Luka />
+    }
+    if (window.location.pathname === '/Kanye') {
+      return <Kanye />
+    }
+    if (window.location.pathname === '/Cudi') {
+      return <Cudi />
+    }
+    if (window.location.pathname == '/Rocky') {
+      return <Rocky />
+    } else {
+      return <div>404</div>
+    }
 
     // return (
     //   <>
