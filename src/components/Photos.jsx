@@ -1,28 +1,11 @@
 import React, { Component } from 'react'
 
-export class Basketball extends Component {
+export class Photos extends Component {
   render() {
     return (
       <div>
         <section>
-          <header>
-            <h1>Franchise</h1>
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/Basketball">Basketball</a>
-              </li>
-              <li>
-                <a href="Music">Music</a>
-              </li>
-            </ul>
-          </header>
-        </section>
-
-        <section className="players">
-          <article className="player">
+          <article>
             <h2>
               <a href="/Lebron">LeBron James</a>
             </h2>
@@ -32,7 +15,7 @@ export class Basketball extends Component {
               height="500px"
             />
           </article>
-          <article className="player">
+          <article>
             <h2>
               <a href="/Jordan"> Michael Jordan </a>
             </h2>
@@ -42,7 +25,7 @@ export class Basketball extends Component {
               height="500px"
             />
           </article>
-          <article className="player">
+          <article>
             <h2>
               <a href="/Kobe">Kobe Bryant</a>
             </h2>
@@ -52,7 +35,7 @@ export class Basketball extends Component {
               height="500px"
             />
           </article>
-          <article className="player">
+          <article>
             <h2>
               <a href="/Luka"> Luka Doncic</a>
             </h2>
