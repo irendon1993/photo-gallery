@@ -4,28 +4,21 @@ import { CategoryList } from './pages/CategoryList'
 import { PhotoList } from './pages/PhotoList'
 import { PhotoDetail } from './pages/PhotoDetail'
 
-class App extends Component {
+export class App extends Component {
   render() {
-    console.log(window.location)
-
     return (
-      <div>
-        <section>
-          <header>
-            <h1>Franchise</h1>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/Basketball">Basketball</Link>
-              </li>
-              <li>
-                <Link to="/Music">Music</Link>
-              </li>
-            </ul>
-          </header>
+      <main>
+        <section className="hero">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">
+                <Link to="/">Things I Like</Link>
+              </h1>
+              <h2 className="subtitle">A Photo Gallery</h2>
+            </div>
+          </div>
         </section>
+
         <section className="section">
           <Switch>
             <Route exact path="/" component={CategoryList} />
@@ -37,9 +30,7 @@ class App extends Component {
             />
           </Switch>
         </section>
-      </div>
+      </main>
     )
   }
 }
-
-export default App

@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import photoData from '../photos.json'
+
+//
+// This code uses the `bulma` CSS Framework.
+//
+// It also uses the Font Awesome icon set.
+//
 
 class CategoryCard extends Component {
   render() {
