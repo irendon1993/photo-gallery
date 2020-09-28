@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-export class Photos extends Component {
+export class PhotoList extends Component {
   render() {
     return (
       <div>
         <section>
           <article>
             <h2>
-              <a href="/Lebron">LeBron James</a>
+              <Link to="/Lebron">LeBron James</Link>
             </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/lebron-james-scream-gilang-bogy.jpg"
@@ -17,7 +18,7 @@ export class Photos extends Component {
           </article>
           <article>
             <h2>
-              <a href="/Jordan"> Michael Jordan </a>
+              <Link to="/Jordan"> Michael Jordan </Link>
             </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/michael-jordan-gilang-bogy.jpg"
@@ -27,7 +28,7 @@ export class Photos extends Component {
           </article>
           <article>
             <h2>
-              <a href="/Kobe">Kobe Bryant</a>
+              <Link to="/Kobe">Kobe Bryant</Link>
             </h2>
             <img
               src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/kobe-bryant-gilang-bogy.jpg"

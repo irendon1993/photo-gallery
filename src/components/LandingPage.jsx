@@ -10,13 +10,13 @@ export class LandingPage extends Component {
             <h1>Franchise</h1>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/Basketball">Basketball</a>
+                <Link to="/Basketball">Basketball</Link>
               </li>
               <li>
-                <a href="/Music">Music</a>
+                <Link to="/Music">Music</Link>
               </li>
             </ul>
           </header>
@@ -24,7 +24,7 @@ export class LandingPage extends Component {
         <section>
           <article>
             <h2>
-              <a href="/Basketball">Basketball</a>
+              <Link to="/Basketball">Basketball</Link>
             </h2>
             <img
               src="https://a.espncdn.com/photo/2020/0511/nba_74_players_3_16x9.jpg"
@@ -34,7 +34,7 @@ export class LandingPage extends Component {
           </article>
           <article>
             <h2>
-              <a href="/Music">Music</a>
+              <Link to="/Music">Music</Link>
             </h2>
             <img
               src="https://www.realstreetradio.com/wp-content/uploads/2018/11/Kanye.jpg"
