@@ -7,23 +7,18 @@ class PhotoListCard extends Component {
     const photoLinkTo = `${this.props.category}/${this.props.index}`
 
     return (
-      <div className="column is-one-third">
-        <div className="card">
-          <div className="card-content">
-            <div className="card-image">
-              <figure className="image">
-                <Link to={photoLinkTo}>
-                  <img src={this.props.imageURL} alt={this.props.title} />
-                </Link>
-                <figcaption>
-                  <Link to={photoLinkTo}>{this.props.title}</Link>
-                </figcaption>
-              </figure>
-            </div>
-            <div className="content" />
-          </div>
+      <>
+        <div>
+          <figure>
+            <figcaption>
+              <Link to={photoLinkTo}>{this.props.title}</Link>
+            </figcaption>
+            <Link to={photoLinkTo}>
+              <img src={this.props.imageURL} alt={this.props.title} />
+            </Link>
+          </figure>
         </div>
-      </div>
+      </>
     )
   }
 }
@@ -37,25 +32,23 @@ export class PhotoList extends Component {
     const photos = photoListData.photos
 
     return (
-      <div className="container">
-        <nav className="breadcrumb" aria-label="breadcrumbs">
+      <div>
+        <nav>
           <ul>
             <li>
               <Link to="/">
-                <span className="icon">
-                  <i className="fas fa-home" aria-hidden="true" />
-                </span>
                 <span>Home</span>
               </Link>
             </li>
-            <li className="is-active">
-              <Link to={'/pandas'}>{photoListData.title}</Link>
+            <li>
+              <Link to={`/${category}`}>{photoListData.title}</Link>
             </li>
           </ul>
         </nav>
-        <h3 className="title">{photoListData.title}</h3>
-        <h4 className="subtitle">{photoListData.description}</h4>
-        <div className="columns is-multiline">
+        {/* <div className="thumbnailPhoto">
+          <h3 className="title">{photoListData.title}</h3>
+          <h4 className="subtitle">{photoListData.description}</h4> */}
+        <div>
           {photos.map((photo, index) => (
             <PhotoListCard
               key={photo.title}
@@ -67,6 +60,7 @@ export class PhotoList extends Component {
           ))}
         </div>
       </div>
+      // </div>
     )
   }
 }

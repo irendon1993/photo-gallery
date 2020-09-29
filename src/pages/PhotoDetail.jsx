@@ -11,30 +11,27 @@ export class PhotoDetail extends Component {
     const photo = photoData[category].photos[photoIndex]
 
     return (
-      <div className="container">
-        <nav className="breadcrumb" aria-label="breadcrumbs">
+      <div>
+        <nav>
           <ul>
             <li>
               <Link to="/">
-                <span className="icon">
-                  <i className="fas fa-home" aria-hidden="true" />
-                </span>
                 <span>Home</span>
               </Link>
             </li>
             <li>
               <Link to={`/${category}`}>{photoListData.title}</Link>
             </li>
-            <li className="is-active">
+            <li>
               <Link to={`/${category}/${photoIndex}`}>{photo.title}</Link>
             </li>
           </ul>
         </nav>
-        <h3 className="title">{photo.title}</h3>
-        <figure className="image">
-          <img src={photo.imageURL} alt={photo.title} />
+        <h3>{photo.title}</h3>
+        <figure>
+          <img className="Big" src={photo.imageURL} alt={photo.title} />
         </figure>
-        <p className="is-small">
+        <p>
           <a href={photo.sourceURL}>Source</a>
         </p>
       </div>
