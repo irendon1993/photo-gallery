@@ -40,7 +40,7 @@ export class CategoryList extends Component {
     console.log(categoryNames)
 
     return (
-      <div>
+      <div className="marker">
         <div>
           {categoryNames.map(categoryName => (
             <CategoryCard
