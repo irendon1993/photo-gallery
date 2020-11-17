@@ -6,9 +6,9 @@ class CategoryCard extends Component {
   render() {
     return (
       <div>
-        <div>
-          <div>
-            <div>
+        <div className="boxContainer">
+          <div className="titleContainer">
+            <div className="figureContainer">
               <h2 className="albumTitle">
                 <Link to={`/${this.props.categoryName}`}>
                   {this.props.categoryDetails.title}

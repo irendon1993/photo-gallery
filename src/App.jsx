@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './styles/index.scss'
 import { Link, Route, Switch } from 'react-router-dom'
 import { CategoryList } from './pages/CategoryList'
 import { PhotoList } from './pages/PhotoList'
