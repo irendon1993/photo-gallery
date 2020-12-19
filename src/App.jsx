@@ -9,15 +9,13 @@ export class App extends Component {
   render() {
     return (
       <main>
-        <section>
-          <header>
-            <h1>
-              <Link to="/">Franchise</Link>
-            </h1>
-          </header>
+        <section className="header">
+          <h1>
+            <Link to="/">Franchise</Link>
+          </h1>
         </section>
 
-        <section className="section">
+        <section className="cards">
           <Switch>
             <Route exact path="/" component={CategoryList} />
             <Route exact path="/:category" component={PhotoList} />

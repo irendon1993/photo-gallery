@@ -5,28 +5,17 @@ import photoData from '../photos.json'
 class CategoryCard extends Component {
   render() {
     return (
-      <div>
-        <div className="boxContainer">
-          <div className="titleContainer">
-            <div className="figureContainer">
-              <h2 className="albumTitle">
-                <Link to={`/${this.props.categoryName}`}>
-                  {this.props.categoryDetails.title}
-                </Link>
-              </h2>
-            </div>
-          </div>
-          <div>
-            <figure>
-              <img
-                className="albumCover"
-                src={this.props.categoryDetails.photos[0].albumCover}
-                alt={this.props.categoryDetails.photos[0].title}
-                // width="900px"
-                // height="450px"
-              />
-            </figure>
-          </div>
+      <div className="cardContainer">
+        <div className="title">
+          <Link to={`/${this.props.categoryName}`}>
+            {this.props.categoryDetails.title}
+          </Link>
+        </div>
+        <div className="cardImage">
+          <img
+            src={this.props.categoryDetails.photos[0].albumCover}
+            alt={this.props.categoryDetails.photos[0].title}
+          />
         </div>
       </div>
     )
@@ -40,16 +29,14 @@ export class CategoryList extends Component {
     console.log(categoryNames)
 
     return (
-      <div className="marker">
-        <div>
-          {categoryNames.map(categoryName => (
-            <CategoryCard
-              key={categoryName}
-              categoryName={categoryName}
-              categoryDetails={photoData[categoryName]}
-            />
-          ))}
-        </div>
+      <div className="category">
+        {categoryNames.map(categoryName => (
+          <CategoryCard
+            key={categoryName}
+            categoryName={categoryName}
+            categoryDetails={photoData[categoryName]}
+          />
+        ))}
       </div>
     )
   }
