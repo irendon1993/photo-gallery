@@ -15,7 +15,7 @@ export class App extends Component {
           </h1>
         </section>
 
-        <section className="cards">
+        <section className="photoList">
           <Switch>
             <Route exact path="/" component={CategoryList} />
             <Route exact path="/:category" component={PhotoList} />

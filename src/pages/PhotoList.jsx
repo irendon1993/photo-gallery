@@ -45,9 +45,6 @@ export class PhotoList extends Component {
             </li>
           </ul>
         </nav>
-        {/* <div className="thumbnailPhoto">
-          <h3 className="title">{photoListData.title}</h3>
-          <h4 className="subtitle">{photoListData.description}</h4> */}
         <div>
           {photos.map((photo, index) => (
             <PhotoListCard
@@ -60,7 +57,7 @@ export class PhotoList extends Component {
           ))}
         </div>
       </div>
-      // </div>
+      
     )
   }
 }

@@ -1,11 +1,12 @@
+@import 'basketball';
+
 :root {
   font: 16px / 1 sans-serif;
 }
 
-html {
-  width: 100%;
-  height: auto;
 
+
+html {
   background: rgb(186, 46, 108);
   background: linear-gradient(
     90deg,
@@ -13,10 +14,6 @@ html {
     rgba(227, 242, 34, 1) 25%,
     rgba(68, 219, 231, 1) 100%
   );
-}
-
-main {
-  width: 100%;
 }
 
 .header {
@@ -37,39 +34,6 @@ main {
   }
 }
 
-.cards {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .category {
-    margin: 0;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .cardContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-
-      .cardImage {
-        width: 70%;
-        img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
 
 title {
   font-size: 2em;
@@ -91,11 +55,6 @@ figcaption {
   font-size: 2em;
 }
 
-.albumCover {
-  width: 900px;
-  height: 450px;
-}
-
 .Big {
   width: 600px;
   height: 750px;
@@ -105,4 +64,22 @@ h3 {
   display: flex;
   justify-content: center;
   font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 800px) {
+  main {
+    .category{
+      width: 100%;
+      .cardContainer{
+        width: 100%;
+        .cardImage {
+          width: 100%;
+          img {
+            width: 100%; 
+          }
+        }  
+      }
+    }
+  }
 }
