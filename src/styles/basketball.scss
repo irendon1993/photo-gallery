@@ -1,34 +1,34 @@
-.photoList {
-    margin: 0;
+.photosContainer {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    .category {
-      margin: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-      .cardContainer {
+    flex-direction: column;
+    
+    .photoList {
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 80%;
-  
-        .cardImage {
-          width: 80%;
-          img {
-            height: 200px;
+        
+        .photo {
+            width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-          }
+            flex-direction: column;
+
+            a{
+                width: 50%;
+            }
+
+            img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
         }
-      }
     }
   }

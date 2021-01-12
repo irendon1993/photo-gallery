@@ -8,15 +8,13 @@ class PhotoListCard extends Component {
 
     return (
       <>
-        <div>
-          <figure>
+        <div className="photo">
             <figcaption>
               <Link to={photoLinkTo}>{this.props.title}</Link>
             </figcaption>
             <Link to={photoLinkTo}>
               <img src={this.props.imageURL} alt={this.props.title} />
             </Link>
-          </figure>
         </div>
       </>
     )
@@ -32,7 +30,7 @@ export class PhotoList extends Component {
     const photos = photoListData.photos
 
     return (
-      <div>
+      <div className="photosContainer">
         <nav>
           <ul>
             <li>
@@ -45,7 +43,7 @@ export class PhotoList extends Component {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="photoList">
           {photos.map((photo, index) => (
             <PhotoListCard
               key={photo.title}

@@ -25,11 +25,51 @@ html {
   margin: 0;
 
   h1 {
-    a:link {
-      text-decoration: none;
+    a:link {text-decoration: none; color: antiquewhite;
     }
-    a:visited {
-      text-decoration: none;
+     a:visited { text-decoration: none; color: antiquewhite; }
+    
+  }
+}
+
+.categoryList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    .cardContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;   
+      
+      .title {
+        display: flex;
+        justify-content: center;
+        a:visited { text-decoration: none; color: white; }
+
+      }
+
+      .cardImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+        img {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+      }
     }
   }
 }
