@@ -25,9 +25,12 @@ html {
   margin: 0;
 
   h1 {
-    a:link {text-decoration: none; color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a:link {text-decoration: none; color: rgb(186, 46, 108);
     }
-     a:visited { text-decoration: none; color: antiquewhite; }
+     a:visited { text-decoration: none; color: rgb(186, 46, 108) }
     
   }
 }
@@ -42,6 +45,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     width: 80%;
 
     .cardContainer {
@@ -49,12 +53,14 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;   
+      flex-direction: column;
+      padding-bottom: 50px;   
       
       .title {
         display: flex;
         justify-content: center;
-        a:visited { text-decoration: none; color: white; }
+        align-items: center;
+        a:visited { text-decoration: none; color: rgb(186, 46, 108); }
 
       }
 
@@ -73,12 +79,6 @@ html {
     }
   }
 }
-
-
-title {
-  font-size: 2em;
-}
-
 ul {
   display: flex;
   flex-direction: row;
@@ -89,10 +89,6 @@ li {
   padding: 30px;
   text-decoration: none;
   font-size: 1.5em;
-}
-
-figcaption {
-  font-size: 2em;
 }
 
 .Big {

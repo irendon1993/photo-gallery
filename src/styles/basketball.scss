@@ -4,6 +4,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     
     .photoList {
         width: 80%;
