@@ -28,14 +28,37 @@
 
             a{
                 width: 50%;
-            }
 
-            img {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
             }
         }
     }
+  }
+
+  @media screen and (max-width:1440px) {
+    
+    .photosContainer {
+        width: 100%;
+        .photoList {
+            width: 100%;
+            .photo{
+                width: 80%;
+                a {
+                    width: 60%;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+             }
+         }
+        
+    }
+    
+    
   }
