@@ -2,6 +2,7 @@
 
 :root {
   font: 16px / 1 sans-serif;
+  font-family: 'Oleo Script', cursive;
 }
 
 
@@ -31,7 +32,7 @@ html {
     a:link {text-decoration: none; color: rgb(186, 46, 108);
     }
      a:visited { text-decoration: none; color: rgb(186, 46, 108) }
-    
+    font-size: 56px;
   }
 }
 
@@ -60,7 +61,9 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
+        a:link {text-decoration: none; color: rgb(186, 46, 108);}
         a:visited { text-decoration: none; color: rgb(186, 46, 108); }
+        font-size: 32px;
 
       }
 
@@ -118,6 +121,14 @@ h3 {
             }
           }  
         }
+      }
+    }
+
+    .big {
+      width: 90%;
+
+      img {
+        width: 90%;
       }
     }
   }

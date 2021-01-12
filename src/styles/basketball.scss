@@ -9,6 +9,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        li {
+            font-size: 28px;
+            a:link {text-decoration: none; color: rgb(186, 46, 108);}
+            a:visited { text-decoration: none; color: rgb(186, 46, 108); }
+        }
     }
     
     
@@ -28,7 +34,7 @@
 
             a{
                 width: 50%;
-
+                font-size: 36px;
                 img {
                     display: flex;
                     justify-content: center;
@@ -36,6 +42,8 @@
                     width: 100%;
                 }
             }
+            a:link {text-decoration: none; color: rgb(186, 46, 108);}
+            a:visited { text-decoration: none; color: rgb(186, 46, 108); }
         }
     }
   }
@@ -57,8 +65,12 @@
                 }
              }
          }
-        
+         .big {
+            width: 90%;
+      
+            img {
+              width: 90%;
+            }
+        }     
     }
-    
-    
   }

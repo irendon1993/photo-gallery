@@ -11,7 +11,7 @@ export class PhotoDetail extends Component {
     const photo = photoData[category].photos[photoIndex]
 
     return (
-      <div>
+      <div className="photoDetail">
         <nav>
           <ul>
             <li>
@@ -27,13 +27,13 @@ export class PhotoDetail extends Component {
             </li>
           </ul>
         </nav>
-        <h3>{photo.title}</h3>
-        <figure>
-          <img className="Big" src={photo.imageURL} alt={photo.title} />
-        </figure>
-        <p>
-          <a href={photo.sourceURL}>Source</a>
-        </p>
+        <div className="bigContainer">
+          <h3>{photo.title}</h3>
+            <img className="Big" src={photo.imageURL} alt={photo.title} />
+          <p>
+            <a href={photo.sourceURL}>Source</a>
+          </p>
+        </div>
       </div>
     )
   }
