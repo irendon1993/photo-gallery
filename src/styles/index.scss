@@ -105,16 +105,19 @@ h3 {
 
 @media screen and (max-width: 800px) {
   main {
-    .category{
+    .categoryList  {
       width: 100%;
-      .cardContainer{
+      .category{
         width: 100%;
-        .cardImage {
+        .cardContainer{
           width: 100%;
-          img {
-            width: 100%; 
-          }
-        }  
+          .cardImage {
+            width: 100%;
+            img {
+              width: 80%; 
+            }
+          }  
+        }
       }
     }
   }
